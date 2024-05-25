@@ -1,0 +1,168 @@
+body,
+h1,
+h2,
+ul,
+p,
+ol,
+li,
+figure,
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+#todo-header {
+    margin: 0%;
+    padding: 0%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#todo-body {
+    background-color: #f4f4f4;
+}
+
+#footer-todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+    gap: 16px;
+    padding: 20px;
+}
+
+#todo-form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#input-tarefa {
+    width: 200px;
+    height: 30px;
+}
+
+#input-descricao {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    resize: vertical;
+    white-space: pre-wrap;
+}
+
+#button-tarefa,
+#saveButton,
+#cancelButton {
+    width: 120px;
+    height: 30px;
+    background-color: #0074d9;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#button-tarefa:active,
+#saveButton:active,
+#cancelButton:active {
+    opacity: 0.8;
+}
+
+#button-tarefa:hover,
+#saveButton:hover,
+#cancelButton:hover {
+    width: 140px;
+}
+
+
+ul li {
+    list-style: none;
+    padding: 4px;
+}
+
+.tarefas {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 12px;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+p {
+    white-space: pre-wrap;
+}
+
+.editButton {
+    position: absolute;
+    right: 10px;
+    margin-left: auto;
+    border-radius: 5px;
+    border: none;
+    background-color: #676767;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 0;
+}
+
+.editButton::before {
+    content: '✏️';
+}
+
+.editButton:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.editButton:active {
+    opacity: 0.8;
+}
+
+#editDialog {
+    border-radius: 10px;
+    width: 300px;
+    height: 190px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#inputDialog {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#buttonsDialog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+    margin: auto;
+    width: 100%;
+    left: 50%;
+}

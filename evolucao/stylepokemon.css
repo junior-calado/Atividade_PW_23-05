@@ -1,0 +1,24 @@
+#header h1 {
+    font-size: 20px;
+}
+
+.main-pokemon {
+    display: flex;
+    text-align: left;
+    flex-flow: column;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+}
+
+#imagem-do-pokemon {
+    height: 200px;
+    width: 200px;
+}

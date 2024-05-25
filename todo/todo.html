@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO</title>
+    <link rel="stylesheet" href="todoStyle.css">
+</head>
+
+<body id="todo-body">
+
+    <header id="todo-header">
+        <h1>
+            To-Do List
+        </h1>
+    </header>
+
+
+    <form name="todo-form" id="todo-form">
+        <input id="input-tarefa" type="text" placeholder="Digite uma tarefa...">
+        <textarea id="input-descricao" type="text" placeholder="Adicione uma descrição..."></textarea>
+        <button type="submit" id="button-tarefa">Adicionar Tarefa</button>
+    </form>
+
+    <main>
+        <ul id="todo-list">
+
+        </ul>
+
+        <dialog id="editDialog">
+            <form id="editForm">
+                <div id="inputDialog">
+                    <input id="editTitulo" type="text" placeholder="Título">
+                    <textarea id="editDescricao" placeholder="Descrição"></textarea>
+                </div>
+                <div id="ButtonsDialog">
+                    <button type="button" id="saveButton" onclick="salvarEdicao()">Editar</button>
+                    <button type="button" id="cancelButton">Cancelar</button>
+                </div>
+            </form>
+        </dialog>
+
+
+    </main>
+
+
+
+    <footer id="footer-todo">
+        <p> &copy 2024 To-do List</p>
+        <p id="updates">Esta página foi visitada X vezes. A última visita foi: xx/xx/xxxx, xx:xx</p>
+    </footer>
+    <script src="../localstorage.js"></script>
+</body>
+
+</html>
